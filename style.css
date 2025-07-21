@@ -511,22 +511,160 @@ p{
 
 /* Responsive for mobile */
 @media (max-width: 900px) {
-    .explore-box {
-        width: 90%;
-        padding: 16px 0;
+    /* NAVBAR */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 5%;
     }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    /* HOME SECTION */
+    .home {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 5%;
+        height: auto;
+    }
+
+    .home-info {
+        align-items: center;
+        text-align: center;
+    }
+
+    .home-img {
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .home-img .img-box {
+        width: 200px;
+        height: 200px;
+    }
+
+    .home-info h1 {
+        font-size: 32px;
+    }
+
+    .home-info h2,
+    .typewriter {
+        font-size: 20px;
+    }
+
+    .home-info p {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+        margin-top: 30px;
+    }
+
+    /* ABOUT ME */
+    .aboutme-img-box {
+        margin: 0 auto;
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-me-desc {
+        margin: 20px auto;
+        padding: 16px 20px;
+        font-size: 16px;
+    }
+
+    .about-me-section h2 {
+        font-size: 36px;
+    }
+
+    /* EXPERIENCE */
+    .exp,
+    .exp2 {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .exp .exp-box,
+    .exp2 .exp-box2 {
+        margin: 20px 0;
+        width: 90%;
+    }
+
+    /* EXPLORE SECTION */
+    .explore-box,
+    .explore-box2 {
+        width: 90%;
+        margin: 20px auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+
     .explore-columns {
         flex-direction: column;
         gap: 20px;
     }
+
     .explore-column {
         width: 100%;
-        gap: 18px;
     }
+
     .explore-column p {
-        padding-left: 32px;
+        padding-left: 20px;
+    }
+
+    .explore .frontend,
+    .explore .backend {
+        margin: 20px 0 10px;
+        font-size: 24px;
+    }
+
+    /* CONTACT / FILL */
+    .fill {
+        margin: 40px auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fill-box {
+        width: 90%;
+    }
+
+    /* FOOTER */
+    .footer-content h1 {
+        font-size: 30px;
+    }
+
+    .footer-content p,
+    .info-container p {
+        font-size: 14px;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .info-container .social-icons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .lastpart {
+        font-size: 14px;
+        padding: 10px;
     }
 }
+
 
 .explore-box2 {
     width: 45%;
