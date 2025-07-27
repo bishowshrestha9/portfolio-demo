@@ -9,7 +9,7 @@
 
     <body>
         <nav class="navbar">
-            <a href="home" class="logo">Protfolio</a>
+            <a class="logo">Protfolio</a>
             <ul>
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
@@ -278,8 +278,9 @@ document.addEventListener("DOMContentLoaded", function () {
         let current = "";
 
         sections.forEach((section) => {
-            const sectionTop = section.offsetTop - 100;
-            if (scrollY >= sectionTop) {
+            const sectionTop = section.offsetTop - 120; // Increased offset for fixed navbar
+            const sectionHeight = section.offsetHeight;
+            if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
                 current = section.getAttribute("id");
             }
         });
